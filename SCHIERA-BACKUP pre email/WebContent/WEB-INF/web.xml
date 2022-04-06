@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>SCHIERA</display-name>
+  <welcome-file-list>
+    <welcome-file>/VIEW/index.jsp</welcome-file>
+  </welcome-file-list>
+
+<servlet>
+    <servlet-name>LoginControl</servlet-name>
+    <servlet-class>com.schiera.control.LoginControl</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>LoginControl</servlet-name>
+	<url-pattern>/login</url-pattern>
+</servlet-mapping>
+
+<servlet>	
+	<servlet-name>LogoutControl</servlet-name>
+	<servlet-class>com.schiera.control.LogoutControl</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>LogoutControl</servlet-name>
+	<url-pattern>/logout</url-pattern>
+</servlet-mapping>
+
+<servlet>	
+	<servlet-name>NuovaPrenotazioneControl</servlet-name>
+	<servlet-class>com.schiera.control.NuovaPrenotazioneControl</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>NuovaPrenotazioneControl</servlet-name>
+	<url-pattern>/nuovaPrenotazione</url-pattern>
+</servlet-mapping>
+
+<servlet>	
+	<servlet-name>CercaPrenotazioneControl</servlet-name>
+	<servlet-class>com.schiera.control.CercaPrenotazioneControl</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>CercaPrenotazioneControl</servlet-name>
+	<url-pattern>/cercaPrenotazione</url-pattern>
+</servlet-mapping>
+	
+<servlet>	
+	<servlet-name>ModificaDataControl</servlet-name>
+	<servlet-class>com.schiera.control.ModificaDataControl</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>ModificaDataControl</servlet-name>
+	<url-pattern>/modificaData</url-pattern>
+</servlet-mapping>
+
+<servlet>	
+	<servlet-name>CancellaPrenotazioneControl</servlet-name>
+	<servlet-class>com.schiera.control.CancellaPrenotazioneControl</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>CancellaPrenotazioneControl</servlet-name>
+	<url-pattern>/cancellaPrenotazione</url-pattern>
+</servlet-mapping>
+
+<servlet>	
+	<servlet-name>NuovoMedicoControl</servlet-name>
+	<servlet-class>com.schiera.control.NuovoMedicoControl</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>NuovoMedicoControl</servlet-name>
+	<url-pattern>/nuovoMedico</url-pattern>
+</servlet-mapping>
+
+<servlet>	
+	<servlet-name>InCodaControl</servlet-name>
+	<servlet-class>com.schiera.control.InCodaControl</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>InCodaControl</servlet-name>
+	<url-pattern>/inCoda</url-pattern>
+</servlet-mapping>
+
+<servlet>	
+	<servlet-name>PulisciCodaControl</servlet-name>
+	<servlet-class>com.schiera.control.PulisciCodaControl</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>PulisciCodaControl</servlet-name>
+	<url-pattern>/pulisciCoda</url-pattern>
+</servlet-mapping>
+
+<servlet>	
+	<servlet-name>PrelevaCodaControl</servlet-name>
+	<servlet-class>com.schiera.control.PrelevaCodaControl</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>PrelevaCodaControl</servlet-name>
+	<url-pattern>/prelevaCoda</url-pattern>
+</servlet-mapping>
+
+<servlet>	
+	<servlet-name>VaccinaControl</servlet-name>
+	<servlet-class>com.schiera.control.VaccinaControl</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>VaccinaControl</servlet-name>
+	<url-pattern>/vaccina</url-pattern>
+</servlet-mapping>
+
+<servlet>	
+	<servlet-name>RifiutaVaccinazioneControl</servlet-name>
+	<servlet-class>com.schiera.control.RifiutaVaccinazioneControl</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>RifiutaVaccinazioneControl</servlet-name>
+	<url-pattern>/rifiutaVaccinazione</url-pattern>
+</servlet-mapping>
+
+<servlet>	
+	<servlet-name>PostiLiberiControl</servlet-name>
+	<servlet-class>com.schiera.control.PostiLiberiControl</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>PostiLiberiControl</servlet-name>
+	<url-pattern>/postiLiberi</url-pattern>
+</servlet-mapping>
+
+<servlet>	
+	<servlet-name>CambiaDataControl</servlet-name>
+	<servlet-class>com.schiera.control.CambiaDataControl</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>CambiaDataControl</servlet-name>
+	<url-pattern>/cambiaData</url-pattern>
+</servlet-mapping>
+	
+<servlet>	
+	<servlet-name>StampaReportControl</servlet-name>
+	<servlet-class>com.schiera.control.StampaReportControl</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>StampaReportControl</servlet-name>
+	<url-pattern>/stampaReport</url-pattern>
+</servlet-mapping>
+</web-app>
